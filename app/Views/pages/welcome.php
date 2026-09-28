@@ -35,7 +35,7 @@
 
     <div class="container">
         <h1>Tasks for Today</h1>
-        <p class="subtitle"><?= date('F j, Y') ?></p>
+        <p class="subtitle">September 26, 2026</p>
 
         <?php if (empty($tasks)): ?>
             <div class="empty-state">
