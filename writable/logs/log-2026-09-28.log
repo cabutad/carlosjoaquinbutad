@@ -1,0 +1,12 @@
+CRITICAL - 2026-09-28 20:28:23 --> ErrorException: Type of App\Models\TaskModel::$validationRules must not be defined (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: /]
+in APPPATH\Models\TaskModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-09-28 20:28:23 --> ErrorException: Type of App\Models\TaskModel::$validationRules must not be defined (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: tasks]
+in APPPATH\Models\TaskModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-09-28 20:28:24 --> ErrorException: Type of App\Models\UserModel::$validationRules must not be defined (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: profile]
+in APPPATH\Models\UserModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

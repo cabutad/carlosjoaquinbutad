@@ -1,0 +1,9 @@
+/vendor/
+/composer.phar
+/composer-setup.php
+composer.lock
+.env
+.phpunit.result.cache
+.phpunit.cache/
+/build/
+!important.txt
