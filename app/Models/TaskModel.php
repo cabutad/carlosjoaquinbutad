@@ -23,7 +23,7 @@ class TaskModel extends Model
 
     public function getTodayTasks()
     {
-        return $this->where('task_date', date('Y-m-d'))
+        return $this->where('task_date', '2026-09-26')
                     ->orderBy('created_at', 'DESC')
                     ->findAll();
     }
