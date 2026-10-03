@@ -27,6 +27,10 @@ class CreateTasksTable extends Migration
             'task_date'  => [
                 'type' => 'DATE',
             ],
+            'is_archived' => [
+                'type'      => 'BOOLEAN',
+                'default'   => false,
+            ],
             'created_at' => [
                 'type' => 'DATETIME',
             ],

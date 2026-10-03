@@ -13,6 +13,7 @@ class UserSeeder extends Seeder
                 'username'   => 'admin',
                 'full_name'  => 'Carlos Joaquin Butad',
                 'email'      => 'carlos@example.com',
+                'password'   => password_hash('admin123', PASSWORD_DEFAULT),
                 'created_at' => date('Y-m-d H:i:s'),
             ],
         ];

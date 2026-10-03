@@ -24,6 +24,12 @@
         <a href="/tasks">All Tasks</a>
         <a href="/profile">Profile</a>
         <a href="/about">About</a>
+        <?php if (session('isLoggedIn')): ?>
+            <a href="/tasks/new">New Task</a>
+            <a href="/logout">Logout</a>
+        <?php else: ?>
+            <a href="/login">Login</a>
+        <?php endif; ?>
     </nav>
 
     <div class="container">
@@ -36,6 +42,9 @@
             <ul style="margin-left: 1.5rem; margin-bottom: 1rem; line-height: 1.8;">
                 <li>Dashboard showing only today's tasks</li>
                 <li>Complete task list with all records</li>
+                <li>Full CRUD for tasks (create, read, update, delete)</li>
+                <li>User authentication (login and logout)</li>
+                <li>Soft deletion — archived tasks are hidden, not removed</li>
                 <li>User profile page</li>
                 <li>Database-backed with MySQL migrations and seeders</li>
             </ul>

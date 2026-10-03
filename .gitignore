@@ -7,3 +7,10 @@ composer.lock
 .phpunit.cache/
 /build/
 !important.txt
+/writable/debugbar/
+/writable/session/
+/writable/vendor/
+/writable/cache/*
+/!writable/cache/.gitkeep
+/writable/logs/
+/system/app/

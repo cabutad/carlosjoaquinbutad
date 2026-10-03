@@ -12,7 +12,7 @@ class UserModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['username', 'full_name', 'email', 'created_at'];
+    protected $allowedFields    = ['username', 'full_name', 'email', 'password', 'created_at'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged  = true;
@@ -20,6 +20,11 @@ class UserModel extends Model
     protected $validationRules  = [];
     protected $validationMessages = [];
     protected $customTrigers     = [];
+
+    public function findByUsername(string $username)
+    {
+        return $this->where('username', $username)->first();
+    }
 
     public function getDemoUser()
     {
